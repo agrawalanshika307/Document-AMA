@@ -1,5 +1,5 @@
-from backend.app.llm.gemini import llm, embeddings, vector_store
-from backend.app.config import settings
+from app.llm.gemini import llm, embeddings, vector_store
+from app.config import settings
 
 
 async def process_query(query: str):

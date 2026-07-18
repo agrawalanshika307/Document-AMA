@@ -1,12 +1,12 @@
 from sys import exception
 import fitz
 from fastapi import APIRouter, Query, Request, HTTPException
-from backend.app.schemas.response import QueryResponse
-from backend.app.services.query_service import process_query
+from app.schemas.response import QueryResponse
+from app.services.query_service import process_query
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter 
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from backend.app.config import settings
+from app.config import settings
 from langchain_chroma import Chroma
 router = APIRouter()
 
